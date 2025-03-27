@@ -1,0 +1,92 @@
+body {
+    background-color: #172030;
+    color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.barra-nav {
+    background-color: #101722;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+
+.logotipo-nav img {
+    width: 125px;
+}
+
+
+.lista-opcoes ul li {
+    display: inline;
+    padding-right: 25px;
+    list-style: none;
+}
+
+
+.lista-opcoes a {
+    text-decoration: none;
+}
+
+
+.artigo {
+    padding: 0px 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #505050;
+}
+
+
+.titulo-principal {
+    text-align: center;
+}
+
+
+.logo-mesabrasil {
+    text-align: center;
+}
+
+
+.info-adicionais {
+    text-align: center;
+}
+
+
+.titulo-receita {
+    background-color: #101722;
+    border: #101722 solid 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.ingredientes ul li {
+    list-style: square;
+    margin: 5px;
+}
+
+
+.nav-receitas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+.nav-receitas p {
+    background-color: #101722;
+    border: #101722 solid 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: larger;
+    width: 200px;
+
+    margin-bottom: 10px;
+}
