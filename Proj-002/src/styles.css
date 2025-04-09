@@ -1,0 +1,35 @@
+
+
+.game-container {
+    color: #252525;
+}
+
+
+.game-container img {
+    width: 100%;
+    margin: auto;
+}
+
+
+.classes-container {
+    color: #252525;
+}
+
+
+.classes-container img {
+    width: 100%;
+    margin: auto;
+}
+
+
+.footer-container {
+    text-align: center;
+}
+
+
+.footer-container a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
