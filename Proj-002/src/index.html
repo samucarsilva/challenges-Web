@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Team Fortress II </title>
+    <link rel="shortcut icon" type="imagex/png" href="../res/shortcut-icon.ico">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -12,11 +14,47 @@
 
     <header>
 
-        <nav>
+
+        <nav class="nav-container">
 
 
-            <div>
-                
+            <div id="navbar-logo">
+
+                <a href="#">
+                    <img src="../res/teamfortress-logotype.png" alt="">
+                </a>
+
+            </div>
+
+
+            <div id="navbar-options">
+
+                    <ul>
+
+                        <li>
+
+                            <a href="#scout-container"> Scout </a>
+
+                            <a href="#soldier-container"> Soldier </a>
+
+                            <a href="#pyro-container"> Pyro </a>
+
+                            <a href="#demo-container"> Demoman </a>
+
+                            <a href="#heavy-container"> Heavy </a>
+
+                            <a href="#engie-container"> Engineer </a>
+
+                            <a href="#medic-container"> Medic </a>
+
+                            <a href="#sniper-container"> Sniper </a>
+
+                            <a href="#spy-container"> Spy </a>
+
+                        </li>
+
+                    </ul>
+
             </div>
 
 
@@ -31,16 +69,14 @@
 
         <div class="game-container">
 
-
-            <div class="game-logo">
-                <img src="../res/teamfortress-logo.png" alt="">
+            <div id="audio-container">
+                <audio controls>
+                    <source src="../res/soundtrack-maintheme.mp3">
+                </audio>
             </div>
 
-
-            <div class="wallpaper">
-                <img src="../res/teamfortress-wallpaper.jpg" alt="">
-            </div>
-
+            <div id="wallpaper">  </div>
+            <div id="logo-container"> </div>
 
         </div>
 
@@ -52,61 +88,217 @@
 
 
                 <div id="scout-container">
-                    <h1> Scout </h1>
-                    <img src="../res/scout-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Scout </h1>
+
+                        <p> 
+                            <span> O </span> Scout é a primeira classe do game e pertence a categoria de ataque. Ele é ágil, rápido e consegue capturar objetivos duas vezes mais rápido que outras classes. Armado com uma espingarda, uma pistola e um bastão, ele compensa a falta de resistência com velocidade e mobilidade.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Gosta de garotas elegantes e com óculos meio tortos — apesar de todas o rejeitarem...
+                        </p>
+
+
+                        <audio controls>
+                            <source src="../res/scout-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="soldier-container">
-                    <h1> Soldier </h1>
-                    <img src="../res/soldier-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Soldier </h1>
+
+                        <p> 
+                            <span> O </span> Soldier também pertence a categoria de ataque. Usa um lança-foguetes como arma principal, o que permite até se lançar pelos ares com os próprios foguetes. É o típico patriota exagerado que adora dar ordens — mesmo que ninguém esteja ouvindo.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Acredita que homens de verdade cortam o cabelo, gritam, comem costelas, fazem flexões e defendem colinas.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/soldier-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="pyro-container">
-                    <h1> Pyro </h1>
-                    <img src="../res/pyro-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Pyro </h1>
+
+                        <p> 
+                            <span> O </span> Pyro é a terceira classe de ataque, misterioso e silencioso (ninguém entende o que ele fala). Usa um lança-chamas e adora ver as coisas... pegando fogo. Muito fogo.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Vive em um mundo de fantasia colorido, onde tudo é fofo e feliz — incluindo as pessoas que ele está, na realidade, incendiando.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/pyro-quote.wav">
+                        </audio>
+
+                    </div>
+                    
                 </div>
 
 
                 <div id="demo-container">
-                    <h1> Demoman </h1>
-                    <img src="../res/demo-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Demoman </h1>
+
+                        <p> 
+                            <span> O </span> Demoman pertence a categoria de defesa. É um especialista em explosivos: granadas, bombas adesivas e caos em geral. Um escocês mal-humorado e quase sempre bêbado.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Já tentou fazer um brinde com suas próprias bombas... só não deu certo porque ele estava muito alegre para perceber.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/demo-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="heavy-container">
-                    <h1> Heavy </h1>
-                    <img src="../res/heavy-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Heavy </h1>
+
+                        <p> 
+                            <span> O </span> Heavy também é uma classe de defesa. Ele é a classe mais resistente do jogo e utiliza uma metralhadora giratória chamada Sasha. Fala pouco, mas quando fala, todo mundo escuta.
+
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Apesar de ser um brutamontes gigante, ele ama sanduíches com uma paixão digna de novela mexicana.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/heavy-quote.wav">
+                        </audio>
+                        
+                    </div>
+
                 </div>
 
 
                 <div id="engie-container">
-                    <h1> Engineer </h1>
-                    <img src="../res/engie-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Engineer </h1>
+
+                        <p> 
+                            <span> O </span> Engineer é a terceira classe de defesa do game. Ele constrói torretas automáticas, teleportes e dispensers que curam aliados. Inteligente e prático, é o verdadeiro suporte silencioso da equipe.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Sua maior dor de cabeça não são os inimigos... mas sim os Spies sabotando suas construções enquanto ele toma um café.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/engie-quotes.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="medic-container">
-                     <h1> Medic </h1>
-                    <img src="../res/medic-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Medic </h1>
+
+                        <p> 
+                            <span> O </span> Medic pertence a categoria de suporte. Ele cura os aliados com uma arma médica e corta seus adversários com uma serra. Tem um certo amor pela medicina... só que de um jeito bem questionável.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Perdeu sua licença médica após causar o desaparecimento completo do esqueleto de um paciente. Apesar disso, continua prestando atendimento a todos que o procuram.
+
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/medic-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="sniper-container">
-                    <h1> Sniper </h1>
-                    <img src="../res/sniper-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Sniper </h1>
+
+                        <p> 
+                            <span> O </span> Sniper corresponde a segunda classe de suporte do game. Fica longe do campo de batalha, eliminando inimigos com tiros certeiros na cabeça – que, na maioria das vezes, desafiam até mesmo as leis da física. É calmo, centrado e quase sempre impassível.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Mora em uma van, vive tomando chá e acredita que o segredo do sucesso é ficar longe de pessoas chatas. Talvez ele tenha razão.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/sniper-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
                 <div id="spy-container">
-                    <h1> Spy </h1>
-                    <img src="../res/spy-wallpaper.png" alt="">
+
+                    <div class="class-details">
+
+                        <h1> Spy </h1>
+
+                        <p> 
+                            <span> O </span> Spy corresponde a terceira classe de suporte do game. Mestre do disfarce, pode se transformar em qualquer inimigo, ficar invisível e eliminar alvos com uma facada nas costas. Um verdadeiro espião francês cheio de classe e veneno.
+                        </p>
+
+                        <p>
+                            <span> CURIOSIDADE: </span> Vive fumando com ar de superioridade e tem sempre um truque escondido em suas mangas.
+                        </p>
+
+                        <audio controls>
+                            <source src="../res/spy-quote.wav">
+                        </audio>
+
+                    </div>
+
                 </div>
 
 
             </div>
-            
+
 
         </section>
 
@@ -118,9 +310,30 @@
 
         <div class="footer-container">
             
-            <div>
+
+            <div id="contact-section">
                 <p> Made By <a href="https://github.com/samucarsilva"> Samuel Resende </a> </p>
             </div>
+
+
+            <div id="game-content">
+                <img src="../res/teamfortress-logo.png" alt="" >
+                <p> 
+                    <a href="https://www.teamfortress.com/"> Team Fortress II </a> 
+                </p>
+
+                <img src="../res/steam-logo.png" alt="" >
+                <p> 
+                    <a href="https://store.steampowered.com/app/440/Team_Fortress_2/"> Team Fortress II </a> 
+                </p>
+            </div>
+
+
+            <div id="copyright-section">
+                <p> Este site foi criado apenas para fins educativos e sem fins lucrativos. </p>
+                <p> Todo o material utilizado pertence aos seus respectivos donos. </p>
+            </div>
+
 
         </div>
 

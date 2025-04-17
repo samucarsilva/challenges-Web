@@ -1,35 +1,362 @@
 
 
-.game-container {
-    color: #252525;
+@font-face {
+    font-family: "TF2 Build";
+    src: url(../res/teamfortress-font.ttf);
 }
 
 
-.game-container img {
+@font-face {
+    font-family: "Verdana";
+    src: url(../res/teamfortress-chatfont.ttf);
+}
+
+
+body {
+    background-image: linear-gradient(360deg, rgba(60, 60, 60, 75%), rgba(60, 60, 60, 100%));
     width: 100%;
-    margin: auto;
+    height: 100%;
+    margin: 0;
+}
+
+
+span {
+    padding-left: 3em; /* Tabulando o Texto */
+}
+
+
+.nav-container {
+    position: fixed; /* Fixando o Elemento Em Um Único Lugar */
+    top: 0; /* Grudando e Elemento no Topo da Página */
+    left: 0; /* Grudando o Elemento na Lateral Esquerda */
+    width: 100%; /* Ocupando Toda a Largura */
+    z-index: 3; /* Sobrepondo Outros Elementos */
+    background-color: rgb(35, 35, 35, 75%); /* Cor de Fundo Transparente */
+    height: 15vh; /* Definindo a Altura da Barra de Nav*/
+}
+
+
+#navbar-logo {
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+
+
+#navbar-logo img {
+    position: absolute;
+    width: 15vw;
+}
+
+
+#navbar-options {
+    width: 100vw;
+    margin-left: 18%;
+    margin-top: 7vh;
+}
+
+
+#navbar-options ul li a {
+    color: whitesmoke;
+    font-family: "Verdana";
+    font-size: large;
+    text-decoration: none;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+
+.game-container {
+    height: 100vh;
+    margin-top: 50vh;
+}
+
+
+#audio-container {
+    position: absolute;
+    margin: 1rem 1rem;
+    z-index: 1;
+}
+
+
+#wallpaper {
+    background-image: url(../res/teamfortress-wallpaper.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#logo-container {
+    background-image: url(../res/teamfortress-logotype.png);
+    background-size: contain;
+    transform: translateY(-125vh);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
 }
 
 
 .classes-container {
-    color: #252525;
+    color: rgb(250, 250, 250);
+    font-family: "TF2 Build";
+    font-size: 2em;
 }
 
 
-.classes-container img {
+.classes-container p {
+
+    color: #454545;
+    font-family: "Verdana";
+    font-size: 0.4em;
+    font-weight: lighter;
+    text-align: left;
+    padding: 1rem;
+}
+
+
+.classes-container audio {
+    margin-top: 3rem;
+}
+
+
+.class-details {
+    background-image: linear-gradient(to right, rgba(221, 221, 221, 1) , rgba(204, 204, 204, 0.5));
+    color: #252525;
+    width: 45vw;
+    height: 50vh;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+
+#scout-container {
+    background-image: url(../res/scout-wallpaper.png);
+    background-size: cover;
     width: 100%;
-    margin: auto;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#scout-container div {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+}
+
+
+#soldier-container {
+    background-image: url(../res/soldier-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#soldier-container div {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+}
+
+
+#pyro-container {
+    background-image: url(../res/pyro-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#pyro-container div {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+}
+
+
+#demo-container {
+    background-image: url(../res/demo-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#demo-container div {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    margin-top: 60vh;
+}
+
+
+#heavy-container {
+    background-image: url(../res/heavy-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#heavy-container div {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    margin-top: 60vh;
+}
+
+
+#engie-container {
+    background-image: url(../res/engie-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#engie-container div {
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+}
+
+
+#medic-container {
+    background-image: url(../res/medic-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#medic-container div {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+}
+
+
+#sniper-container {
+    background-image: url(../res/sniper-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#sniper-container div {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    margin-top: 60vh;
+}
+
+
+#spy-container {
+    background-image: url(../res/spy-wallpaper.png);
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+
+#spy-container div {
+    position: absolute;
+    right: 0;
+    margin: 1rem;
+    margin-top: 60vh;
 }
 
 
 .footer-container {
+    background-color: rgb(35, 35, 35, 75%);
+    color: whitesmoke;
+    font-family: "Verdana";
+    font-size: 1em;
+    width: 100%;
+    margin-top: 10vh;
+    padding-top: 1rem;
+    height: 40vh;
+}
+
+
+#contact-section {
     text-align: center;
 }
 
 
-.footer-container a {
-    color: black;
+#contact-section a {
+    color: rgb(235, 200, 120);
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
 }
 
+
+#game-content {
+    margin-top: 10vh;
+    font-size: small;
+    margin-top: 5vh;
+    margin-left: 1vw;
+}
+
+
+#game-content a {
+    position: relative;
+    top: -3.5vh;
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 3vw;
+
+}
+
+
+#game-content img {
+    position: relative;
+    width: 2vw;
+}
+
+
+#copyright-section {
+    color: rgba(245, 245, 245, 50%);
+    width: 100%;
+    margin-top: 14vh;
+    font-size: small;
+    text-align: center;
+}
