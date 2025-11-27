@@ -1,0 +1,246 @@
+/* Assets */
+
+    /* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    /* Icons */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+
+/* Website */
+
+:root {
+
+    --primary-color: #1E1E1E;
+
+    --website-color-1: #038C33;
+    --website-color-2: #F2B705;
+    --website-color-3: #29268C;
+    --website-color-4: #F2F2F2;
+    --website-color-5: #5A58A6;
+
+    --website-hover-color: #E1E1E1;
+
+}
+
+
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+
+body {
+    background-image: url(../img/ketleyn-quadros.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Main Section */
+
+
+.main-section {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+.name-section {
+    background: linear-gradient(45deg, var(--website-color-1), var(--website-color-2));
+    color: var(--website-color-4);
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    backdrop-filter: blur(25px);
+    color: var(--website-color-4);
+    position: relative;
+    width: 480px;
+    border: 1px solid var(--website-color-4);
+    border-radius: 25px;
+    padding: 8rem 4rem 2rem 4rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+
+.form-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+
+.form-header {
+    background-color: var(--website-color-4);
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.form-input {
+    background-color: transparent;
+    color: var(--website-color-4);
+    width: 100%;
+    font-size: 0.875rem;
+    border: 1px solid var(--website-color-4);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+
+.form-input:focus {
+    outline: 3px solid var(--website-color-5);
+}
+
+
+.form-input:focus ~ .form-label,
+.form-input:valid ~ .form-label {
+    background-color: var(--website-color-4);
+    color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    font-size: 0.875rem;
+    border-radius: 25px;
+    padding: 0 1rem;
+}
+
+
+.form-icon {
+    position: absolute;
+    margin: 0 1rem;
+    color: var(--website-color-4);
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.form-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: 0.25s;
+}
+
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.form-checkbox input {
+    accent-color: var(--website-color-5);
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.form-button {
+    background-color: var(--website-color-4);
+    color: var(--primary-color);
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding: 0.75rem;
+    transition: 0.25s;
+}
+
+
+.form-button:hover {
+    background-color: var(--website-color-5);
+    color: var(--website-color-4);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.form-link {
+    font-weight: 600;
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+
+.form-link:hover {
+    color: var(--website-hover-color);
+    transition: 0.25s;
+}
+
+
+@media only screen and (max-width: 564px) {
+
+    .form-container {
+        padding: 20px;
+    }
+
+
+    .form-main {
+        padding: 0;
+    }
+
+
+    .name-section {
+        margin-right: 2rem;
+    }
+
+}
